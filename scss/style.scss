@@ -1,0 +1,68 @@
+body {
+  align-items: center;
+  height: 100vh;
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.carousel {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    border: 3px solid #000;
+    overflow: hidden;
+  }
+  &__pagination {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    justify-content: space-between;
+  }
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background: rgb(143, 98, 155);
+  border-radius: 50%;
+  margin: 0 7px;
+  transition: 0.5s;
+}
+.dot--active {
+  width: 30px;
+  height: 30px;
+  background: rgb(75, 34, 87);
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.slide {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  transform: translateX(0);
+  transition: 0.5s;
+
+  &__item {
+    width: inherit;
+  }
+  &__img {
+    width: inherit;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+  }
+}
